@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>BAKFON</title>
+ <style>
+  *{margin: 0;
+  
+  }
+   header {
+     background-color:rgb(255, 255, 255);
+     padding: 20px;
+     text-align: center;
+   }
+   nav ul {
+     list-style-type: none;
+     padding: 0;
+   }
+   nav ul li {
+     display: inline;
+     margin-right: 30px;
+   }
+   nav ul li a {
+     color: #000000;
+     text-decoration: none;
+     justify-content: center;
+   }
+   .img-and-names{display:flex }
+   .imgaes{display: flex;}
+   .imgaes1{display: flex;}
+   button{border-radius: 100px;
+       background-color: rgb(0, 153, 255);
+       border-color: rgb(0, 153, 255);
+       
+   
+}
+ </style>
+</head>
+<body>
+
+ <header>
+<img src="data:image/png;base64,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" alt="tima_co" width="110px">
+
+    <nav>
+      <ul>
+        <li><a href="#">МАТЕМАТИКА</a></li>
+        <li><a href="#"> РУССКИЙ ЯЗЫК </a></li>
+        <li><a href="#">АНГЛИЙСКИЙ ЯЗЫК</a></li>
+        <li><a href="#">ЛИТЕРАТУРА</a></li>
+      </ul>
+    </nav>
+ </header>
+<div class="imgaes">
+<div class="img-div">
+ <img src="https://azegdz.com/wp-content/uploads/2021/12/156.png" alt="" width="190px" >
+ <h4>Задания нами 205 задание .</h4>
+ <button id="button">Подробнее</button>
+</div>
+<div class="img-div">
+ <img src="https://pbs.twimg.com/profile_images/1701878932176351232/AlNU3WTK_400x400.jpg" alt="" width="190px" >
+ <h4>Задания нами 205 задание.</h4>
+ <button>Подробнее</button>
+</div>
+</div>
+<div class="imgaes1">
+<div class="img-div">
+ <img src="https://pbs.twimg.com/profile_images/1701878932176351232/AlNU3WTK_400x400.jpg" alt="" width="190px" >
+ <h4>Задания нами 205 задание.</h4>
+ <button>Подробнее</button>
+</div>
+<div class="img-div">
+ <img src="https://pbs.twimg.com/profile_images/1701878932176351232/AlNU3WTK_400x400.jpg" alt="" width="190px" >
+ <h4>Задания нами 205 задание.</h4>
+ <button>Подробнее</button>
+</div>
+</div>
+
+
+
+ <footer>
+  <p>&copy; TIMA@CO/GDZ.AZ/ZNANIJA</p>
+</footer>
+ 
+<script></script>
+</body>
+</html>
